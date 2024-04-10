@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: center;
+    padding: center;
+    background-image: url("./qoqys.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: center;
+    width: 100%;
+}

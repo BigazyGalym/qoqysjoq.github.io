@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</body>
+</html>
+    
+<script>
+  // Сохранение данных в локальное хранилище на первой странице
+  localStorage.setItem('sharedData', 'Это общие данные');
+</script>
+
+
+<body>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./qoqys.jpg");
+    background-size: cover; /* Масштабируем изображение для заполнения всего экрана */
+  background-position: center; /* Выравниваем изображение по центру */
+  background-repeat: no-repeat; /* Запрещаем повторение фонового изображения */
+  height: 100vh; /* Высота равная 100% высоте окна браузера */
+}
+
+#loginForm, #registrationForm {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Цвет фона страницы */
+}
+
+#loginForm, #registrationForm {
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5); /* Черная прозрачная заливка */
+  color: white; /* Цвет текста */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black; /* Цвет текста в полях ввода */
+}
+
+a {
+  color: aquamarine; /* Цвет текста ссылок */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse; /* Расположение справа налево */
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(19, 230, 160);
+  border: 1px solid #ccc; /* Обводка */
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #1a0707; /* Изменение цвета при наведении */
+}
+
+.language {
+  display: flex;
+}
+
+header {
+  background-color: #0100019f;
+          color: #420d0d;
+          padding: 10px;
+          text-align: center;
+        }
+
+
+
+
+
+</style>
+
+<title>QoqysJoq</title>
+<link rel="stylesheet" type="text/css" href="fon.css">
+</head>
+<body>
+  <center>
+  <!-- Форма регистрации -->
+  <div id="registrationForm" style="display: none;">
+    <h2>Регистрация</h2>
+    <label for="regUsername">Имя пользователя:</label>
+    <input type="text" id="regUsername" required><br><br>
+    <label for="regPassword">Пароль:</label>
+    <input type="password" id="regPassword" required><br><br>
+    <button onclick="register()">Зарегистрироваться</button>
+    <p>Уже есть аккаунт? <a href="#" onclick="toggleForms()">Войдите</a></p>
+  </div>
+
+  <!-- Форма входа -->
+  <div id="loginForm">
+    <h2>Вход</h2>
+    <label for="loginUsername">Имя пользователя:</label>
+    <input type="text" id="loginUsername" required><br><br>
+    <label for="loginPassword">Пароль:</label>
+    <input type="password" id="loginPassword" required><br><br>
+    <button onclick="login()">Войти</button>
+    <p>Нет аккаунта? <a href="#" onclick="toggleForms()">Зарегистрироваться</a></p>
+  </div>
+
+  <script src="script.js"></script>
+  </center>
+  <script src="./script.js"></script>
+
+
+<body>
+
+</body>
+
+</html>
